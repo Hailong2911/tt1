@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/js/process.js">
+    <title>NETFLIX</title>
+</head>
+<body>
+    <div id="main">
+            <div id="header">
+                 <!-- <a href="" class="logo">NETFLIX</a> -->
+                 <ul id="nav">
+                     <a href="" class="logo">NETFLIX</a>
+                     
+                    
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Phim T.hình</a></li>
+                    <li><a href="">Phim</a></li>
+                    <li><a href="">Mời thêm</a></li>
+                    <li><a href="">Danh sách của tôi</a>
+                    <ul class="subnav">
+                        <li><a href="">Kinh dị</a></li>
+                        <li><a href="">Hài hước</a></li>
+                        <li><a href="">TV Show</a></li>
+                    </ul>
+                    </li>
+                 </ul>
+                 <div class="search-btn">
+                    <i class="search-icon ti-search"></i>
+                 </div>
+            </div>
+        
+        <div id="slider">
+            <!-- Thẻ Chứa Slideshow -->
+ <div class="slideshow-container">
+    <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+     <div class="mySlides fade">
+       <div class="numbertext">1 / 3</div>
+       <img src="./assets/img/phim10.jpg" alt="">
+       <div class="text">Nội Dung 1</div>
+     </div>
+    <div class="mySlides fade">
+       <div class="numbertext">2 / 3</div>
+       <img src="./assets/img/phim11.jpg" alt="">
+       <div class="text">Nội Dung 2</div>
+     </div>
+    <div class="mySlides fade">
+       <div class="numbertext">3 / 3</div>
+       <img src="./assets/img/phim13.png" alt="">
+       <div class="text">Nội Dung 3</div>
+     </div>
+    <!-- Nút điều khiển mũi tên-->
+     <a class="prev" onclick="plusSlides(-1)">❮</a>
+     <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <br>
+  <!-- Nút tròn điều khiển slideshow-->
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+   </div>
+
+        </div>
+
+        <div id="content">
+                <div class="content-section">
+                    <h2 class="section-heading">Netflix Phim Gốc </h2>
+                    <div class="phim-list">
+                       <div class="phim-item">
+                           <img src="./assets/img/phim2.jpg" alt="" class="phim-img">
+                       </div>
+                       <div class="phim-item">
+                        <img src="./assets/img/phim9.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim8.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim10.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim6.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim10.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim12.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="clear"></div>
+        
+                    </div>
+                    
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-heading"> Phim Thịnh Hành</h2>
+                    <div class="phim-list">
+                       <div class="phim-item">
+                           <img src="./assets/img/phim2.jpg" alt="" class="phim-img">
+                       </div>
+                       <div class="phim-item">
+                        <img src="./assets/img/phim9.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim8.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim10.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim6.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim10.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="phim-item">
+                        <img src="./assets/img/phim12.jpg" alt="" class="phim-img">
+                    </div>
+                    <div class="clear"></div>
+        
+                    </div>
+                    
+                </div>
+
+
+        </div>
+
+    </div>
+    <!-- <script>
+        var slideIndex = 1;
+ showSlides(slideIndex);
+function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+ }
+    </script> -->
+</body>
+</html>

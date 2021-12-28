@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+#main{
+
+
+    
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav{
+    display: inline-block;
+
+}
+ #nav .logo{
+     color: red;
+     display: inline-block;
+     position: relative;
+     text-decoration: none;
+     box-sizing: content-box;
+     padding: 0 12px;
+ }
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: white;
+}
+
+#nav li a {
+   
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    background-color: #fff;
+}
+#nav li:hover a{
+    color: black;
+    background-color: #fff;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+
+#nav .subnav a{
+    color: black;
+
+
+
+}
+
+#header .search-btn:hover{
+
+    background-color: rgb(221, 36, 36);
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-icon{
+       color: #fff;
+       font-size: 20px;
+       line-height: 46px;
+       
+
+}
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/phim1.png') top center / cover no-repeat; 
+    
+}
+#slider .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+ /* ẩn hình ảnh cho phần tử slideshow */
+  .mySlides {
+    display:none;
+  }
+ /* thiết kế nút mũi tên*/
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: fixed top center;
+  }
+ /* thiết kế nút mũi tên next nằm phía bên phải */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+ /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ /* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ /* Thiết lập style cho số hiển thị của phần tử */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ /* thiết lập style  nút tròn điều khiển*/
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+ .active, .dot:hover {
+    background-color: #717171;
+  }
+ /* tạo hiệu ứng chuyển động fade */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+#content{
+    height: 3000px;
+    background-color: rgb(7, 7, 7);
+
+}
+
+#content .phim-item{
+    float: left;
+    width: 16.5%;
+    text-align: center;
+}
+#content .phim-img{
+    margin-top: 15px;
+    width: 170px;
+}
+
+.section-heading {
+    color: #fff;
+    padding: 10px;
+}
